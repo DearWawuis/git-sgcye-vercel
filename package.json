@@ -6,7 +6,9 @@
   "scripts": {
     "start": "babel-node src/index.js",
     "dev": "nodemon src/index.js --exec babel-node",
-    "build": "babel src --out-dir build"
+    "babel-build": "babel src --out-dir build",
+    "build": "sh build.sh",
+    "postinstall": "chmod -R 755 node_modules/.bin"
   },
   "author": "It-Solutions",
   "license": "ISC",
